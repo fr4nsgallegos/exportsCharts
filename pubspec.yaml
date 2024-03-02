@@ -30,6 +30,9 @@ environment:
 dependencies:
   cloud_firestore: ^4.13.6
   firebase_core: ^2.24.2
+  pdf: ^3.10.8
+  path: ^1.8.3
+  open_file: ^3.3.2
 
 
   flutter:
