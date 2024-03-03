@@ -35,6 +35,7 @@ dependencies:
   open_file: ^3.3.2
   path_provider: ^2.1.2
   syncfusion_flutter_xlsio: ^24.2.8
+  syncfusion_officechart: ^24.2.8
 
 
   flutter:
