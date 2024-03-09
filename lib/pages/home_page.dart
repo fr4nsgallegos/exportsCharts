@@ -2,6 +2,9 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:exportsandcharts/pages/cart_page.dart';
+import 'package:exportsandcharts/pages/dashboard_page.dart';
+import 'package:exportsandcharts/pages/perfil_page.dart';
 import 'package:flutter/material.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path/path.dart';
@@ -188,6 +191,33 @@ class HomePage extends StatelessWidget {
                 exportExcelWithChart();
               },
               child: Text("TO EXCEL WITH CHART"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => PerfilPage()));
+              },
+              child: Text("GO PERFIL"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => DashboardPage()));
+              },
+              child: Text("GO DASHBOARD"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => CartPage()));
+              },
+              child: Text("GO CART"),
             ),
           ],
         ),
