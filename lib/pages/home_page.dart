@@ -3,7 +3,8 @@ import 'dart:typed_data';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:exportsandcharts/pages/cart_page.dart';
-import 'package:exportsandcharts/pages/chart1_page.dart';
+import 'package:exportsandcharts/pages/charts/chart1_page.dart';
+import 'package:exportsandcharts/pages/charts/chart2_page.dart';
 import 'package:exportsandcharts/pages/dashboard_page.dart';
 import 'package:exportsandcharts/pages/perfil_page.dart';
 import 'package:flutter/material.dart';
@@ -230,6 +231,15 @@ class HomePage extends StatelessWidget {
                         builder: (BuildContext context) => Chart1Page()));
               },
               child: Text("GO CHART 1"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => Chart2Page()));
+              },
+              child: Text("GO CHART 2"),
             ),
           ],
         ),
