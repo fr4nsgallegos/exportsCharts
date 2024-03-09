@@ -6,6 +6,7 @@ import 'package:exportsandcharts/pages/cart_page.dart';
 import 'package:exportsandcharts/pages/dashboard_page.dart';
 import 'package:exportsandcharts/pages/perfil_page.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
@@ -194,10 +195,11 @@ class HomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (BuildContext context) => PerfilPage()));
+                context.go('/perfil');
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (BuildContext context) => PerfilPage()));
               },
               child: Text("GO PERFIL"),
             ),

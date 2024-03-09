@@ -1,5 +1,8 @@
 import 'package:exportsandcharts/firebase_options.dart';
+import 'package:exportsandcharts/pages/cart_page.dart';
+import 'package:exportsandcharts/pages/dashboard_page.dart';
 import 'package:exportsandcharts/pages/home_page.dart';
+import 'package:exportsandcharts/pages/perfil_page.dart';
 import 'package:exportsandcharts/utils/notification_service.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +31,21 @@ final GoRouter _goRouter = GoRouter(
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
           return HomePage();
+        }),
+    GoRoute(
+        path: '/perfil',
+        builder: (BuildContext context, GoRouterState state) {
+          return PerfilPage();
+        }),
+    GoRoute(
+        path: '/cart',
+        builder: (BuildContext context, GoRouterState state) {
+          return CartPage();
+        }),
+    GoRoute(
+        path: '/dashboard',
+        builder: (BuildContext context, GoRouterState state) {
+          return DashboardPage();
         }),
   ],
 );
