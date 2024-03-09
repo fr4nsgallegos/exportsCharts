@@ -36,6 +36,7 @@ dependencies:
   path_provider: ^2.1.2
   syncfusion_flutter_xlsio: ^24.2.8
   syncfusion_officechart: ^24.2.8
+  firebase_messaging: ^14.6.8
 
 
   flutter:
