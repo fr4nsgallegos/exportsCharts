@@ -162,7 +162,9 @@ class HomePage extends StatelessWidget {
     candidateReference.get().then((value) {
       QuerySnapshot candidateCollection = value;
       List<QueryDocumentSnapshot> docs = candidateCollection.docs;
-      print(docs.length);
+      docs.forEach((element) {
+        print(element.id);
+      });
     });
     return Scaffold(
       appBar: AppBar(),
